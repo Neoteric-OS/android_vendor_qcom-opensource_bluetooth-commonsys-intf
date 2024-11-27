@@ -13,6 +13,8 @@ endif #TARGET_FWK_SUPPORTS_FULL_VALUEADDS
 #BT
 ifeq ($(BOARD_HAVE_BLUETOOTH_QCOM),true)
 PRODUCT_PACKAGES += Bluetooth
+PRODUCT_PACKAGES += ChannelSoundingTestApp
+PRODUCT_PACKAGES += com.android.bluetooth.channelsoundingtestapp.xml
 
 ifneq ($(TARGET_BOARD_TYPE),auto)
 # Set supported Bluetooth profiles to enabled
